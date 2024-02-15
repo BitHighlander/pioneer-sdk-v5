@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
     "@coinmasters/api": "latest",
     "@coinmasters/core": "latest",
     "@coinmasters/helpers": "latest",
@@ -19,9 +21,6 @@
     "@coinmasters/toolbox-utxo": "latest",
     "@coinmasters/types": "latest",
     "@coinmasters/wallet-keepkey": "latest",
-    "next": "14.1.0",
-    "@chakra-ui/icons": "^2.1.1",
-    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@esbuild-plugins/node-globals-polyfill": "0.2.3",
@@ -39,6 +38,7 @@
     "chart.js": "^4.4.1",
     "crypto-browserify": "3.12.0",
     "https-browserify": "1.0.0",
+    "next": "14.1.0",
     "os-browserify": "0.3.0",
     "path-browserify": "1.0.1",
     "qrcode.react": "^3.1.0",
@@ -56,15 +56,15 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.11.18",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.35",
     "react-router-dom": "^6.22.0",
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   }
 }

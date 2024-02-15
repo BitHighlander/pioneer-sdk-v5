@@ -17,7 +17,6 @@ interface BalanceProps {
 }
 
 export default function Balance({ onClose, balance }: BalanceProps) {
-  const navigate = useNavigate();
   const { state, hideModal, resetState } = usePioneer();
   const { api, app, balances, context } = state;
 
@@ -31,7 +30,6 @@ export default function Balance({ onClose, balance }: BalanceProps) {
     console.log("balance: ", balance);
     app.setAssetContext(balance);
     console.log("action")
-    navigate(`/intent/${action}`);
     onClose();
   };
 

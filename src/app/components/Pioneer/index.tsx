@@ -82,13 +82,13 @@ const Pioneer = () => {
   };
 
   // start the context provider
-  useEffect(() => {
-    let pioneerUrl = localStorage.getItem('pioneerUrl');
-    if (balances.length === 0 && !pioneerUrl) {
-      onOpen();
-      setModalType('ONBOARDING');
-    }
-  }, [balances]);
+  // useEffect(() => {
+  //   let pioneerUrl = localStorage.getItem('pioneerUrl');
+  //   if (balances.length === 0 && !pioneerUrl) {
+  //     onOpen();
+  //     setModalType('ONBOARDING');
+  //   }
+  // }, [balances]);
 
   useEffect(() => {
     if (context) {
@@ -175,23 +175,23 @@ const Pioneer = () => {
         );
 
     // Retrieve and parse paired wallets
-    let pairedWallets: any = localStorage.getItem('pairedWallets');
-    if (pairedWallets) {
-      pairedWallets = JSON.parse(pairedWallets).map((pw: any) => pw.split(':')[0].toUpperCase());
-    } else {
-      pairedWallets = [];
-    }
+    // let pairedWallets: any = localStorage.getItem('pairedWallets');
+    // if (pairedWallets) {
+    //   pairedWallets = JSON.parse(pairedWallets).map((pw: any) => pw.split(':')[0].toUpperCase());
+    // } else {
+    //   pairedWallets = [];
+    // }
 
     return walletsToDisplay.map((wallet: any) => (
       <Card key={wallet.type} onClick={() => handleWalletClick(wallet.type)}>
         <CardBody>
           <Flex align="center" direction="column" justify="center">
             <Avatar m={2} size="md" src={wallet.icon}>
-              {pairedWallets?.includes(wallet?.type?.toUpperCase()) ? (
-                <AvatarBadge bg="green.500" boxSize="1em" />
-              ) : (
-                <AvatarBadge bg="red.500" boxSize="1em" />
-              )}
+              {/*{pairedWallets?.includes(wallet?.type?.toUpperCase()) ? (*/}
+              {/*  <AvatarBadge bg="green.500" boxSize="1em" />*/}
+              {/*) : (*/}
+              {/*  <AvatarBadge bg="red.500" boxSize="1em" />*/}
+              {/*)}*/}
             </Avatar>
           </Flex>
         </CardBody>
